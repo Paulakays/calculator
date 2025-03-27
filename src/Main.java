@@ -9,6 +9,7 @@ public class Main {
 
         //Instructions for the user
         System.out.println("This is a calculator that can add, subtract, multiply, divide and calculate the percentage of two numbers");
+        System.out.println("The result is rounded off to the nearest two decimal points if a decimal result is expected");
 
         //User is prompted to enter first number
         System.out.println ( "Enter the first number" );
@@ -51,7 +52,7 @@ public class Main {
         }
 
         //The result is printed out
-        System.out.println ( "The result is: " +result);
+        System.out.println ( "The result is: " +Math.round(result * 100.0) / 100.0);
 
     }
 }
